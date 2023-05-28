@@ -15,6 +15,7 @@
 		497A78BA2A23EE2B009CEFBC /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A78B92A23EE2B009CEFBC /* MovieItemView.swift */; };
 		497A78BD2A23F1EB009CEFBC /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 497A78BC2A23F1EB009CEFBC /* Blackbird */; };
 		497A78BF2A23F233009CEFBC /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A78BE2A23F233009CEFBC /* AppDatabase.swift */; };
+		497A78C12A23F28F009CEFBC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A78C02A23F28F009CEFBC /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		497A78B62A23EDB8009CEFBC /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		497A78B92A23EE2B009CEFBC /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 		497A78BE2A23F233009CEFBC /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		497A78C02A23F28F009CEFBC /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				497A78B62A23EDB8009CEFBC /* db.sqlite */,
+				497A78C02A23F28F009CEFBC /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				497A78A52A23EC55009CEFBC /* FavoriteMoviesApp.swift in Sources */,
 				497A78BF2A23F233009CEFBC /* AppDatabase.swift in Sources */,
 				497A78B52A23EC94009CEFBC /* MoviesListView.swift in Sources */,
+				497A78C12A23F28F009CEFBC /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
