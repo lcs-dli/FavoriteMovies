@@ -12,6 +12,7 @@
 		497A78AC2A23EC57009CEFBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497A78AB2A23EC57009CEFBC /* Preview Assets.xcassets */; };
 		497A78B52A23EC94009CEFBC /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A78B42A23EC94009CEFBC /* MoviesListView.swift */; };
 		497A78B72A23EDB8009CEFBC /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 497A78B62A23EDB8009CEFBC /* db.sqlite */; };
+		497A78BA2A23EE2B009CEFBC /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497A78B92A23EE2B009CEFBC /* MovieItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		497A78AB2A23EC57009CEFBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		497A78B42A23EC94009CEFBC /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
 		497A78B62A23EDB8009CEFBC /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		497A78B92A23EE2B009CEFBC /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +83,18 @@
 		497A78B32A23EC7A009CEFBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				497A78B82A23EE15009CEFBC /* Helpers Views */,
 				497A78B42A23EC94009CEFBC /* MoviesListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		497A78B82A23EE15009CEFBC /* Helpers Views */ = {
+			isa = PBXGroup;
+			children = (
+				497A78B92A23EE2B009CEFBC /* MovieItemView.swift */,
+			);
+			path = "Helpers Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497A78BA2A23EE2B009CEFBC /* MovieItemView.swift in Sources */,
 				497A78A52A23EC55009CEFBC /* FavoriteMoviesApp.swift in Sources */,
 				497A78B52A23EC94009CEFBC /* MoviesListView.swift in Sources */,
 			);

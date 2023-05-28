@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct MoviesListView: View {
+    //MARK: Storing property
+    
+    //MARK: Computed property
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            List{
+                MovieItemView(movieTitle: "Suzume", movieRating: 4, movieGenre: "Fantasy")
+                MovieItemView(movieTitle: "Hello world", movieRating: 4, movieGenre: "Love")
+                MovieItemView(movieTitle: "Suzume", movieRating: 4, movieGenre: "Fantasy")
+            }
+        }
     }
 }
 
