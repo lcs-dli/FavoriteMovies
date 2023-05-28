@@ -4,26 +4,29 @@
 //
 //  Created by David Li on 2023-05-28.
 //
-
+import Blackbird
 import SwiftUI
 
 struct MoviesListView: View {
     //MARK: Storing property
-    
+    //
+    @BlackbirdLiveModels ({db in
+        try await Movie.read(from: db)
+    }) var movies
     //MARK: Computed property
     var body: some View {
         NavigationView{
-            List{
-                MovieItemView(movieTitle: "Suzume", movieRating: 4, movieGenre: "Fantasy")
-                MovieItemView(movieTitle: "Hello world", movieRating: 4, movieGenre: "Love")
-                MovieItemView(movieTitle: "Suzume", movieRating: 4, movieGenre: "Fantasy")
+            List(movies.results){ currentMovie in
+                MovieItemView(movieTitle: currentMovie.name, movieRating: currentMovie.rating, movieGenre: currentMovie.genre)
             }
         }
+        .navigationTitle("Favorite Movie")
     }
 }
 
 struct MoviesListView_Previews: PreviewProvider {
     static var previews: some View {
         MoviesListView()
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
     }
 }
