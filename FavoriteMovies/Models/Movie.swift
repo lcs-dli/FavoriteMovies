@@ -8,7 +8,7 @@
 import Foundation
 import Blackbird
 
-struct Movie: Identifiable{
+struct Movie: BlackbirdModel{
     @BlackbirdColumn var id: Int
     @BlackbirdColumn var name: String
     @BlackbirdColumn var genre: String
