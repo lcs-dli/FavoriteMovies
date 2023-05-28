@@ -26,7 +26,9 @@ struct MoviesListView: View {
 
 struct MoviesListView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesListView()
-            .environment(\.blackbirdDatabase, AppDatabase.instance)
+        NavigationView{
+            MoviesListView()
+                .environment(\.blackbirdDatabase, AppDatabase.instance)
+        }
     }
 }
